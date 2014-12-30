@@ -2,11 +2,26 @@ module.exports = function(grunt) {
  
   grunt.initConfig({
     jshint: {
-      all: ['Gruntfile.js', 'hello.js']
+      all: ['*.js']
+    },
+
+    bower: {
+    	install: {
+    		options: {
+    			targetDir: 'app/lib',
+    			layout: 'byComponent',
+    			cleanTargetDir: true,
+    			install: true,
+    			verbose: false,
+    			bowerOptions: {
+    				production: true
+    			}
+    		}
+    	}
     }
   });
  
-  grunt.loadNpmTasks('grunt-contrib-jshint');
-  grunt.registerTask('default', 'jshint');
- 
+  require('load-grunt-tasks')(grunt);
+
+  grunt.registerTask('default', ['jshint', 'bower:install']);
 };
