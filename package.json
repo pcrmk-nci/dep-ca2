@@ -15,6 +15,7 @@
     "karma": "^0.12.28",
     "karma-chrome-launcher": "^0.1.7",
     "karma-jasmine": "^0.3.3",
+    "karma-phantomjs-launcher": "^0.1.4",
     "load-grunt-tasks": "^2.0.0",
     "protractor": "^1.5.0"
   },
