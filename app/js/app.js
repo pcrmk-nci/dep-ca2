@@ -1,3 +1,6 @@
-(function(){
-	var app = angular.module('learningAngular', []);
-})();
+'use strict';
+
+
+angular.module('learningAngular', [
+	'demoModule'
+]);

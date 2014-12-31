@@ -7,9 +7,11 @@
 	<link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
 
 	<script src="lib/angular/angular.js"></script>
+	<script src="js/modules/demo/demo.js"></script>
+	<script src="js/modules/demo/demoCtrl.js"></script>
 	<script src="js/app.js"></script>
 </head>
 <body>
-	<h1>{{"Learning Angular"}}</h1>
+	<h1 ng-controller="DemoCtrl">{{"Learning " + name}}</h1>
 </body>
 </html>
