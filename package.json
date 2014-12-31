@@ -20,7 +20,8 @@
     "protractor": "^1.5.0"
   },
   "scripts": {
-    "test": "grunt --verbose",
+    "pretest": "grunt build --verbose",
+    "test": "node node_modules/karma/bin/karma start test/karma.conf.js",
     "start": "http-server -a 0.0.0.0 -p 8000"
   }
 }
