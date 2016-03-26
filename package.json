@@ -1,9 +1,9 @@
 {
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
-  "name": "angular-demo",
-  "repository": "https://github.com/andreavaghi/angular-demo",
-  "description": "Repo to test and learn AngularJS, Karma and Travis",
+  "name": "dep-ca2",
+  "repository": "https://github.com/pcrmk-nci/dep-ca2",
+  "description": "Repo with AngularJS, Bootstrap, Karma and Travis",
   "license": "MIT",
   "devDependencies": {
     "grunt": "0.4.5",
